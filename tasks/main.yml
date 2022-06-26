@@ -1,5 +1,17 @@
 ---
 # tasks file for netiq-edirectory
+- name: Create eDirectory directory
+  ansible.builtin.file:
+    path: /etc/opt/novell/eDirectory/conf
+    state: directory
+    mode: 0644
+
+- name: Create SuSEfirewall2 directory
+  ansible.builtin.file:
+    path: /etc/sysconfig/SuSEfirewall2.d/services/eDirectory
+    state: directory
+    mode: 0644
+
 - name: XDAS appenders
   ansible.builtin.template:
     src: xdasconfig.properties.j2

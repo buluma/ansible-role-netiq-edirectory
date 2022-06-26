@@ -5,35 +5,26 @@
   gather_facts: no
 
   tasks:
-    - name: check directory
+    - name: check eDirectory directory
       ansible.builtin.stat:
-        path: /mnt/tmp
-      register: mount_check_directory
+        path: /etc/opt/novell/eDirectory/conf
+      register: eDirectory_check_directory
       failed_when:
-        - not mount_check_directory.stat.exists
+        - not eDirectory_check_directory.stat.exists
 
-    - name: place some file
-      ansible.builtin.file:
-        path: /mnt/tmp/some_file.txt
-        state: touch
-        mode: "0644"
-
-    - name: unmount
-      ansible.posix.mount:
-        path: /mnt/tmp
-        state: unmounted
-
-    - name: check if some file is gone
+    - name: check SuSEfirewall2 directory
       ansible.builtin.stat:
-        path: /mnt/tmp/some_file.txt
-      register: mount_check_some_file
+        path: /etc/sysconfig/SuSEfirewall2.d/services/eDirectory
+      register: SuSEfirewall2_check_directory
       failed_when:
-        - mount_check_some_file.stat.exists
+        - not SuSEfirewall2_check_directory.stat.exists
 
-    - name: revert to mounted state before verify
-      ansible.posix.mount:
-        path: /mnt/tmp
-        src: /tmp
-        opts: bind
-        fstype: none
-        state: mounted
+    - name: Check XDAS appenders
+      stat:
+        path: /etc/opt/novell/eDirectory/conf/xdasconfig.properties
+      register: xdas_appenders
+
+    - name: Verify XDAS appenders
+      debug:
+        msg: "XDAS appenders file exists"
+      when: xdas_appenders.stat.exists

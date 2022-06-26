@@ -1,2 +1,4 @@
 ---
 # defaults file for netiq-edirectory
+sentinel_syslog_server: 127.0.0.1
+sentinel_syslog_port: 25226
