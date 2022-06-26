@@ -1,0 +1,8 @@
+---
+#
+# Ansible managed
+#
+repository:
+  description: Ansible role for setting up NetIQ eDirectory.
+  homepage: https://buluma.github.io/
+  topics: netiq, authentication, ansible, molecule, tox, playbook, hacktoberfest
