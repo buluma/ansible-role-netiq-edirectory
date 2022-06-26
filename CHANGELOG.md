@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-netiq-edirectory/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-netiq-edirectory/compare/0.6.27...HEAD)
+
+**Merged pull requests:**
+
+- Bump buluma/galaxy-action from 1.0.3 to 6.25.22 [\#1](https://github.com/buluma/ansible-role-netiq-edirectory/pull/1) ([dependabot[bot]](https://github.com/apps/dependabot))
+
+## [0.6.27](https://github.com/buluma/ansible-role-netiq-edirectory/tree/0.6.27) (2022-06-26)
+
+[Full Changelog](https://github.com/buluma/ansible-role-netiq-edirectory/compare/0.6.26...0.6.27)
+
 ## [0.6.26](https://github.com/buluma/ansible-role-netiq-edirectory/tree/0.6.26) (2022-06-26)
 
 [Full Changelog](https://github.com/buluma/ansible-role-netiq-edirectory/compare/c2c26910b71799b309ab40e2cefd6a872c411406...0.6.26)
