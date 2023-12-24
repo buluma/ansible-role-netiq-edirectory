@@ -1,10 +1,10 @@
-# [Ansible role netiq-edirectory](#netiq-edirectory)
+# Ansible role [netiq-edirectory](https://galaxy.ansible.com/ui/standalone/roles/buluma/netiq-edirectory/documentation)
 
 Ansible role for setting up NetIQ eDirectory.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-netiq-edirectory/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-netiq-edirectory/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-netiq-edirectory.svg)](https://github.com/buluma/ansible-role-netiq-edirectory/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-netiq-edirectory.svg)](https://github.com/buluma/ansible-role-netiq-edirectory/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-netiq-edirectory.svg)](https://github.com/buluma/ansible-role-netiq-edirectory/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-netiq-edirectory/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-netiq-edirectory/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-netiq-edirectory.svg)](https://github.com/buluma/ansible-role-netiq-edirectory/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-netiq-edirectory.svg)](https://github.com/buluma/ansible-role-netiq-edirectory/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-netiq-edirectory.svg)](https://github.com/buluma/ansible-role-netiq-edirectory/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/netiq-edirectory)](https://galaxy.ansible.com/ui/standalone/roles/buluma/netiq-edirectory/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
